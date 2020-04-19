@@ -22,3 +22,6 @@ When the user input form is submitted it uses a POST request with an internal Fl
 8. Run `python main.py` to start the server
 
 #### Docker Image
+I have provided a dockerhub repo for ease of installation:
+1) Simply install docker > https://docs.docker.com/get-docker/
+2) run `docker pull dispatj/bitly-client && docker run -p 5000:5000 dispatj/bitly-client`
