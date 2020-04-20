@@ -2,7 +2,7 @@
 A simple web app that allows the user to shorten and expand URL's. 
 
 ## GET requests
-Users can send a GET request to 127.0.0.1:5000, sending a GET request with the
+Users can send a GET request to 0.0.0.0:5000, sending a GET request with the
 parameters: method, url will return an application/json response. Sending a GET
 request without url parameters will render the user input form instead. 
 
