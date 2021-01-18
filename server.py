@@ -1,11 +1,16 @@
+import os
+
 from flask import Flask, render_template, request, jsonify
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, SelectField
 from wtforms.validators import DataRequired
 from url import shorten, expand
 
+from dotenv import load_dotenv
+load_dotenv()
+
 app = Flask(__name__)
-app.config["SECRET_KEY"] = "5PZQINhDTExeYYidSPw2c7ttSwb2GJfw"
+app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
 
 # Our main form
 class URLForm(FlaskForm):
